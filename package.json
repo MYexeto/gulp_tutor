@@ -1,0 +1,28 @@
+{
+  "name": "project-7-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYexeto/gulp_tutor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MYexeto/gulp_tutor/issues"
+  },
+  "homepage": "https://github.com/MYexeto/gulp_tutor#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^5.1.0"
+  }
+}
