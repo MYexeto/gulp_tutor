@@ -1,19 +1,18 @@
 const gulp        = require('gulp');
-const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync');
+const sass        = require('gulp-sass');
 
 // Static server
-gulp.task('browser-sync', function() {
+gulp.task('server', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "src"
         }
     });
 });
 
-// or...
-
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        proxy: "yourlocal.dev"
-    });
-});
+gulp.task('styles', function() {
+    return gulp.src("src/sass/*.+(scss|sass)")
+            .pipe(sass())
+            .pipe(gulp.dest("src/css"))
+})
