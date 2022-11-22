@@ -12,19 +12,23 @@
         text-align: center;
     }
     &__items{
-        margin-top: 65px;
+        margin: 65px 100px 78px 100px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         &__item{
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 240px;
+            width: 240px;
+            img{
+                max-width: 70px;
+            }
             .header{
                 margin-top: 38px;
                 color: #0d0d0d;
                 font-size: 18px;
                 font-weight: 700;
+                text-align: center;
             }
             .descrition{
                 margin-top: 26px;
