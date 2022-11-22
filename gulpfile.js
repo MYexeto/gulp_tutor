@@ -1,6 +1,6 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
+const sass        = require('gulp-sass')(require('sass'));
 
 // Static server
 gulp.task('server', function() {
@@ -13,6 +13,7 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/*.+(scss|sass)")
-            .pipe(sass())
+            .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(gulp.dest("src/css"))
+            .pipe(browserSync.stream());
 })
