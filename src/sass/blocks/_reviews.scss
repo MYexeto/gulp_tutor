@@ -1,0 +1,46 @@
+.reviews{
+    margin-top: 80px;
+    .title{
+        margin-top: 0;
+    }
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        // max-width: 650px;
+        margin-top: 70px;
+    }
+    &-item{
+        position: relative;
+        padding-left: 254px;
+        padding-right: 62px;
+        margin-top: 102px;
+        &:nth-child(1){
+            margin-top: 0;
+        }
+
+        &__avatar{
+            position: absolute;
+            left: 0;
+        }
+        &__full-name{
+            color: #0d0d0d;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: left;
+        }
+        &__marafons{
+            margin-top: 10px;
+            color: #646464;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: left;
+        }
+        &__comment{
+            margin-top: 19px;
+            color: #0d0d0d;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: left;
+        }
+    }
+}
