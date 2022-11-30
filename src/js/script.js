@@ -48,7 +48,7 @@ $(document).ready(function(){
 
       $('.button_mini').each(function(i){
         $(this).on('click', function(){
-            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i))
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text())
         });
       });
   });
