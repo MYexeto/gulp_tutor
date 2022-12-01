@@ -53,9 +53,9 @@ $(document).ready(function () {
     });
 
 
-    function valudateForms(form){
+    function valudateForms(form) {
         $(form).validate({
-            rules:{
+            rules: {
                 name: "required",
                 phone: "required",
                 email: {
@@ -63,7 +63,7 @@ $(document).ready(function () {
                     email: true
                 }
             }
-    
+
         });
     }
     valudateForms('#consultation form');
