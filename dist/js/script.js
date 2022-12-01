@@ -1,8 +1,8 @@
 $(document).ready(function () {
     $('.courusel__inner').slick({
         // adaptiveHeight: true,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/chevron-left-solid.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/chevron-right-solid.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="../img/icons/chevron-left-solid.png" alt="chevron-left-solid"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../img/icons/chevron-right-solid.png" alt="chevron-right-solid"></button>',
         responsive: [
             {
                 breakpoint: 992,
