@@ -12,6 +12,11 @@
         height: 270px;
         background-color: $main_color;
     }
+    &__map{
+        iframe{
+            width: 100%;
+        }
+    }
     &__address{
         margin-top: 50px;
         color: #ffffff;

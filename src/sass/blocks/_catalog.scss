@@ -134,6 +134,9 @@
             padding-left: 19px;
             margin-bottom: 0;
             list-style: none;
+            ul{
+                padding-left: 0;
+            }
             &_active{
                 transform: translateX(-100%);
                 margin-right: 0px;
