@@ -65,8 +65,11 @@ $(document).ready(function () {
             }
 
         });
-    }
+    };
     valudateForms('#consultation form');
     valudateForms('#consultation-form');
     valudateForms('#order form');
+
+    $('input[name=phone]').mask("(999) 999-9999");
+    
 });
